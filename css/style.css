@@ -17,6 +17,11 @@
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color: #0ef;
+    --second-main-color: #007bff;
+    --dark-color: #000;
+    --solid-lite-color: #ffffffc2;
+    --lite-shadow-color: #555;
+    --shadow-color: #444;
 }
 
 html {
@@ -176,6 +181,10 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.services {
+    background: var(--second-bg-color);
+}
+
 .services h2 {
     margin-bottom: 5rem;
 }
@@ -190,7 +199,6 @@ span {
 
 .services-container .services-box {
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -215,4 +223,56 @@ span {
 .services-container p {
     font-size: 1.3rem;
     margin: 1rem 0 1rem;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.experience-box {
+    background: var(--solid-lite-color);
+    padding: 1rem;
+    border-radius: 0.369rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.experience-box h3 {
+    font-size: 2.4rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.company {
+    font-size: 1.6rem;
+    color: var(--lite-shadow-color);
+    font-weight: bold;
+}
+
+.date {
+    font-size: 1.3rem;
+    color: var(--second-main-color);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.experience-box p {
+    font-size: 1.3rem;
+    color: var(--shadow-color);
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.experience-box strong {
+    color: var(--dark-color);
 }
