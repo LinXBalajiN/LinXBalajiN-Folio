@@ -264,7 +264,6 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me.!</span></h2>
 
-
         <form action="#">
             <div class="input-box">
                 <input type="text" name="fname" id="fname" placeholder="Full Name">
@@ -279,7 +278,19 @@
         </form>
     </section>
 
-    <!--custom js-->
+    <!-- foorter design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <?php include 'php/footer.php'; ?>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home">
+                <i class="bx bxs-up-arrow-alt"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- custom js -->
     <script src="js/script.js"></script>
 </body>
 
