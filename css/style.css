@@ -276,3 +276,74 @@ span {
 .experience-box strong {
     color: var(--dark-color);
 }
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.porfolio-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.porfolio-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.369s ease-in-out;
+}
+
+.porfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.369s ease-in-out;
+}
+
+.porfolio-box:hover .portfolio-layer {
+    opacity: 1;
+}
+
+.portfolio-layer h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.portfolio-layer ol {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.portfolio-layer a {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 24px;
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.portfolio-layer a:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
