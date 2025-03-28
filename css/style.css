@@ -323,27 +323,72 @@ span {
 }
 
 .portfolio-layer h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 0.625rem;
 }
 
 .portfolio-layer ol {
     text-align: left;
-    font-size: 14px;
-    padding-left: 20px;
+    font-size: 1.3rem;
+    padding-left: 0.845rem;
 }
 
 .portfolio-layer a {
-    margin-top: 10px;
+    margin-top: 0.652rem;
     display: inline-block;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--text-color);
     background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
+    padding: 0.625rem;
     border-radius: 50%;
     transition: background 0.3s;
 }
 
 .portfolio-layer a:hover {
     background: rgba(255, 255, 255, 0.5);
+}
+
+.contact {
+    background: var(--second-bg-color);
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    text-align: center;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: .9rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
 }
