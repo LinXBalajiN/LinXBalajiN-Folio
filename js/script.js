@@ -1,3 +1,12 @@
+/* toggle icon navbar */
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
 /* scroll sections active link */
 
 let sections = document.querySelectorAll('section');
@@ -17,4 +26,19 @@ window.onscroll = () => {
             });
         };
     });
+
+    /* sticky navbar */
+    let header = document.querySelector('header');
+
+    header.classList.toggle('sticky', window.screenY > 100);
+    
+    /* remove toggle icon and navbar when click */
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+
 };
+
+// contact form number
+document.getElementById("number").addEventListener("input", function () {
+    this.value = this.value.replace(/\D/g, '');
+});

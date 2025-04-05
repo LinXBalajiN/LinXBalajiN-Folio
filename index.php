@@ -270,7 +270,7 @@
                 <input type="email" name="email" id="email" placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="number" name="number" id="number" placeholder="Contact Number">
+                <input type="text" name="number" id="number" placeholder="Contact Number" inputmode="numeric" pattern="[0-9]*">
                 <input type="text" name="subject" id="subject" placeholder="Email Subject">
             </div>
             <textarea name="" id="" rows="10" placeholder="Message"></textarea>
