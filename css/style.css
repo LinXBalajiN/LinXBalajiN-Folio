@@ -50,6 +50,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    padding-bottom: 0;
 }
 
 .logo {
@@ -67,6 +68,10 @@ header {
 }
 
 .navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a.active {
     color: var(--main-color);
 }
 
