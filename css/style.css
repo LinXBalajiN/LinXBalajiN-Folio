@@ -97,6 +97,21 @@ header {
     padding-bottom: 3rem;
     box-shadow: 0 0 1rem var(--main-color);
     border-radius: 3.69%;
+    animation: floatImage 3.69s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1.8rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .home-content h4 {
@@ -450,6 +465,18 @@ span {
         padding: 10rem 2% 2rem;
     }
 
+    .services {
+        padding-bottom: 7rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-width: auto;
+    }
+
     .footer {
         padding: 2rem 3%;
     }
@@ -500,10 +527,58 @@ span {
     }
 
     .about {
-        flex-direction: column-reverses;
+        flex-direction: column-reverse;
     }
 
     .about img {
         width: 63vw;
+        margin-top: 4rem;
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:610px) {
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 44%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media(max-width:365px) {
+    .home-img img {
+        width: 77vw;
+    }
+
+    .about img {
+        width: 77vw;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
     }
 }

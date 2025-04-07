@@ -32,7 +32,7 @@ window.onscroll = () => {
 
     header.classList.toggle('sticky', window.screenY > 100);
     
-    /* remove toggle icon and navbar when click */
+    /* remove toggle icon and navbar when click & scroll*/
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 
@@ -42,3 +42,25 @@ window.onscroll = () => {
 document.getElementById("number").addEventListener("input", function () {
     this.value = this.value.replace(/\D/g, '');
 });
+
+// scroll reveal
+ScrollReveal({ 
+    // reset: true,
+    distance:'80px',
+    duration:2000,
+    delay:200
+ });
+
+ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ ScrollReveal().reveal('.home-img, .about-content,.experience-box,.services-container, .porfolio-box, .contact form', { origin: 'bottom' });
+ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+ //typed.js specialist-in
+ const typed = new Typed('.specialist-in', {
+    strings: ['<i>PHP/Laravel Developer</i>', '<i>LAMP Stack Specialist</i>', '<i>PHP Backend Architect</i>'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop:true
+  });

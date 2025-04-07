@@ -40,7 +40,7 @@
         <div class="home-content">
             <h4>Hello, I'm <span>LinXBalajiN</span></h4>
             <h1>BALAJI NANTHAGOPALSAMY</h1>
-            <h4><span>LAMP Stack Specialist | Backend Architect | PHP/Laravel Developer</span></h4>
+            <h4>And I'm a <span class="specialist-in"></span></h4>
 
             <p>I specialize in designing and building <strong>high-performance, scalable web applications</strong> using
                 PHP (Core, Laravel), MySQL, and Linux. My expertise spans REST API development, database
@@ -75,7 +75,7 @@
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3><span>LAMP Stack Specialist | Backend Architect | PHP/Laravel Developer</span></h3>
+            <h3><span>PHP/Laravel Developer</span></h3>
             <p>I am a passionate <strong> Full Stack Developer</strong> with a strong foundation in PHP (Core,
                 Laravel), MySQL, and Linux, specializing in building high-performance, scalable web applications.
                 With several years of experience in backend development, I have honed my skills in REST API
@@ -289,6 +289,12 @@
             </a>
         </div>
     </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js cdn -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- custom js -->
     <script src="js/script.js"></script>
