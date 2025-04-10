@@ -204,7 +204,7 @@
                         <li>SMTP Integration</li>
                         <li>CKEditor Integration for Notes</li>
                     </ol>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
+                    <a href="#" id="noteManagement"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
             <div class="porfolio-box">
@@ -216,7 +216,7 @@
                             to an API endpoint for enhanced system monitoring, debugging, and performance analysis.
                         </li>
                     </ol>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
+                    <a href="#" id="bugAtlas"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
             <div class="porfolio-box">
@@ -323,6 +323,13 @@
         //current year for footer
         const currentYear = new Date().getFullYear();
         document.getElementById("year").textContent = currentYear;
+
+        //project links
+        let noteManagement = 'https://github.com/LinXBalajiN/Laravel-NoteManagement';
+        let bugAtlas = 'https://github.com/LinXBalajiN/bugatlas-laravel';
+
+        document.getElementById("noteManagement").href = github;
+        document.getElementById("bugAtlas").href = github;
     </script>
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
