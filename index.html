@@ -277,18 +277,25 @@
     <!-- contact section design -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me.!</span></h2>
+        <!-- FormSubmit is a form backend, API, and email service -->
+        <form action="https://formsubmit.co/balajiit062@gmail.com" method="POST">
+            <!-- Disable CAPTCHA -->
+            <input type="hidden" name="_captcha" value="false">
 
-        <form action="#">
+            <!-- Redirect to same page with flag -->
+            <input type="hidden" name="_next"
+                value="https://linxbalajin.github.io/LinXBalajiN-Folio/index.html?sent=true">
+
             <div class="input-box">
-                <input type="text" name="fname" id="fname" placeholder="Full Name">
-                <input type="email" name="email" id="email" placeholder="Email Address">
+                <input type="text" name="fname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-                <input type="text" name="number" id="number" placeholder="Contact Number" inputmode="numeric"
-                    pattern="[0-9]*">
-                <input type="text" name="subject" id="subject" placeholder="Email Subject">
+                <input type="text" name="number" placeholder="Contact Number" required>
+                <input type="text" name="subject" placeholder="Subject" required>
             </div>
-            <textarea name="" id="" rows="10" placeholder="Message"></textarea>
+            <textarea name="message" rows="10" placeholder="Your Message" required></textarea>
+
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -304,6 +311,17 @@
             </a>
         </div>
     </footer>
+    <script>
+        // Check if message was sent (via URL parameter)
+        if (window.location.search.includes("sent=true")) {
+            alert("✅ Your message has been sent successfully!");
+
+            // Reload the same page without the ?sent=true
+            setTimeout(() => {
+                window.location.href = window.location.origin + window.location.pathname;
+            }, 100);
+        }
+    </script>
     <!-- social media links -->
     <script>
         let facebook = 'https://www.facebook.com/share/1QEiVK5HHt/';
