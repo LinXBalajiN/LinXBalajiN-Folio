@@ -57,10 +57,14 @@ ScrollReveal({
  ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
  //typed.js specialist-in
- const typed = new Typed('.specialist-in', {
+ const options = {
     strings: ['PHP/Laravel Developer', 'LAMP Stack Specialist', 'PHP Backend Architect'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
-    loop:true
-  });
+    loop: true
+  };
+  
+  ['.specialist-in', '.about-me'].forEach(selector => {
+    new Typed(selector, options);
+  });  
