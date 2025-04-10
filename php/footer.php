@@ -1,1 +1,0 @@
-<p>Copyright &copy; <?php echo date('Y'); ?> by LinXBalajiN | All Rights Reserved.</p>

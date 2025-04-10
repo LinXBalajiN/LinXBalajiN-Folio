@@ -53,11 +53,11 @@
             <p><strong>Let’s collaborate and create powerful solutions—reach out today!</strong></p>
 
             <div class="social-media">
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="#"><i class="bx bxl-twitter"></i></a>
-                <a href="#"><i class="bx bxl-instagram"></i></a>
-                <a href="#"><i class="bx bxl-linkedin"></i></a>
-                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#" target="_blank" id="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" target="_blank" id="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" target="_blank" id="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" target="_blank" id="linkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="#" target="_blank" id="github"><i class="bx bxl-github"></i></a>
             </div>
             <a href="#" class="btn">Download CV</a>
 
@@ -212,7 +212,9 @@
                 <div class="portfolio-layer">
                     <h4>Laravel-BugAtlas</h4>
                     <ol>
-
+                        <li>The project facilitates logging crucial details from incoming HTTP requests and sending them
+                            to an API endpoint for enhanced system monitoring, debugging, and performance analysis.
+                        </li>
                     </ol>
                     <a href="#"><i class="bx bx-link-external"></i></a>
                 </div>
@@ -220,41 +222,51 @@
             <div class="porfolio-box">
                 <img src="img/projects/servostay.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Servostay</h4>
+                    <h4>Laravel - Servostay</h4>
                     <ol>
-
+                        <li>Property Booking Management</li>
+                        <li>API - android, IOS</li>
+                        <li>OTP Login & Registeration</li>
+                        <li>PhonePay Payment Gateway</li>
+                        <li>CRUD</li>
                     </ol>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
             <div class="porfolio-box">
                 <img src="img/projects/fabvenues.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Fabvenues</h4>
+                    <h4>Laravel - Fabvenues</h4>
                     <ol>
-
+                        <li>Property Booking Management</li>
+                        <li>SMTP</li>
+                        <li>Phone number validation with Country code</li>
+                        <li>SMS API by Twilio</li>
                     </ol>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
             <div class="porfolio-box">
                 <img src="img/projects/billing.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Vidyaranya Hospital - Billing</h4>
+                    <h4>PHP - Vidyaranya Hospital - Billing</h4>
                     <ol>
-
+                        <li>Billing Management</li>
+                        <li>Database Management - Mysql</li>
+                        <li>Daily Transactions</li>
+                        <li>Doctor wise Bill reports</li>
+                        <li>Bugs resolve</li>
                     </ol>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
             <div class="porfolio-box">
                 <img src="img/projects/advance-inventory.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Advance Components InventoryManagement</h4>
+                    <h4>PHP - Advance Components Inventory Management</h4>
                     <ol>
-
+                        <li>Inventory Management</li>
+                        <li>SECTION | STORE | QC | ADMIN - Modules</li>
+                        <li>Stock maintain, Indent CRUD, Requisition Crud, Consumable Crud</li>
+                        <li>Job Work Report</li>
                     </ol>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
         </div>
@@ -270,7 +282,8 @@
                 <input type="email" name="email" id="email" placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="text" name="number" id="number" placeholder="Contact Number" inputmode="numeric" pattern="[0-9]*">
+                <input type="text" name="number" id="number" placeholder="Contact Number" inputmode="numeric"
+                    pattern="[0-9]*">
                 <input type="text" name="subject" id="subject" placeholder="Email Subject">
             </div>
             <textarea name="" id="" rows="10" placeholder="Message"></textarea>
@@ -281,7 +294,7 @@
     <!-- foorter design -->
     <footer class="footer">
         <div class="footer-text">
-            <?php include 'php/footer.php'; ?>
+            <p>Copyright &copy; <span id="year"></span> by LinXBalajiN | All Rights Reserved.</p>
         </div>
         <div class="footer-iconTop">
             <a href="#home">
@@ -289,7 +302,28 @@
             </a>
         </div>
     </footer>
+    <!-- social media links -->
+    <script>
+        let facebook = 'https://www.facebook.com/share/1QEiVK5HHt/';
+        let instagram = 'https://www.instagram.com/linxbalajin?igsh=MXI3bzR5ejhybXhmcA==';
+        let twitter = 'https://x.com/LinXBalajiN?t=_ZMl9wONZ8do6lfrUB6jDg&s=09';
 
+        // linkedIn profile
+        let linkedIn = 'https://www.linkedin.com/in/linxbalajin/';
+
+        // github profile
+        let github = 'https://github.com/LinXBalajiN';
+
+        document.getElementById("facebook").href = facebook;
+        document.getElementById("instagram").href = instagram;
+        document.getElementById("twitter").href = twitter;
+        document.getElementById("linkedIn").href = linkedIn;
+        document.getElementById("github").href = github;
+
+        //current year for footer
+        const currentYear = new Date().getFullYear();
+        document.getElementById("year").textContent = currentYear;
+    </script>
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
