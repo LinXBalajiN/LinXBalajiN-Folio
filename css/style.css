@@ -347,13 +347,13 @@ span {
 }
 
 .portfolio-layer h4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.625rem;
 }
 
-.portfolio-layer ol {
+.portfolio-layer li {
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding-left: 0.845rem;
 }
 
