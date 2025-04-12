@@ -58,7 +58,7 @@ ScrollReveal({
 
  //typed.js specialist-in
  const options = {
-    strings: ['PHP/Laravel Developer', 'LAMP Stack Specialist', 'PHP Backend Architect'],
+    strings: ['PHP/Laravel Web Developer', 'LAMP Stack Specialist', 'PHP Backend Architect'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
